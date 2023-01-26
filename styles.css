@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Fraunces', serif;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 20px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* Header */
+header {
+    background: url("./images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+h1 {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 900;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    word-spacing: .2em;
+    padding: 50px 0;
+}
+
+.menu {
+    background: white;
+    color: hsl(232, 10%, 55%);
+    width: 100%;
+    padding: 15px;
+    display: none;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 75px;
+}
+
+.arrow img {
+    width: 10%;
+}
+
+/* Main Content */
+.more {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 900;
+}
+
+/* Transform Content */
+.transform .text {
+    padding: 30px;
+}
+
+.transform p {
+    color: hsl(232, 10%, 55%);
+    padding: 20px 0;
+}
+
+/* Stand Out Content */
+.stand-out .text {
+    padding: 30px;
+}
+
+.stand-out p {
+    color: hsl(232, 10%, 55%);
+    padding: 20px 0;
+}
+
+/* Graphic Design Content */
+.graphic-design {
+    background: url("./images/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+    color: hsl(167, 40%, 24%);
+    padding: 400px 30px 30px;
+}
+
+.graphic-design p {
+    font-size: .85em;
+}
+
+/* Photography Content */
+.photography {
+    background: url("./images/mobile/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+    color: hsl(198, 62%, 26%);
+    padding: 400px 30px 30px;
+}
+
+.photography p {
+    font-size: .85em;
+}
+
+/* Testimonial Content */
+.testimonials {
+    padding: 30px;
+}
+
+h4 {
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: .2em;
+    padding: 20px 0;
+}
+
+.testimonial {
+    padding: 30px 0;
+}
+
+.testimonial img {
+    border-radius: 180px;
+    width: 20%;
+}
+
+.blurb {
+    color: hsl(213, 9%, 39%);
+    padding: 20px 0;
+}
+
+.name {
+    font-family: 'Fraunces', serif;
+}
+
+.title {
+    color: hsl(210, 4%, 67%);
+    font-size: .75em;
+    padding: 10px 0;
+}
+
+/* Gallery Content */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    width: 50%;
+}
+
+.gallery img {
+    height: 100%;
+}
+
+/* Footer Content */
+footer {
+    background: #9fddce;
+    color: hsl(168, 34%, 41%);
+    padding: 30px;
+}
+
+footer .logo img {
+    width: 70%;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.socials figure {
+    padding: 15px;
+}
+
+/* Attribution Content */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
