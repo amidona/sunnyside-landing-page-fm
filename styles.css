@@ -303,4 +303,167 @@ footer ul {
         width: 3%;
     }
 
+    /********* MAIN STYLES ********/
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Transform Content */
+    .transform {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+    }
+
+    .transform>* {
+        flex: 1;
+    }
+
+    .transform img {
+        content: url(./images/desktop/image-transform.jpg);
+        height: 100%;
+    }
+
+    .transform .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        text-align: left;
+        padding: 0;
+    }
+
+    .transform .text>* {
+        max-width: 65%;
+    }
+
+    /* Stand Out Content */
+    .stand-out {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .stand-out>* {
+        width: 50%;
+    }
+
+    .stand-out img {
+        content: url(./images/desktop/image-stand-out.jpg);
+        height: 100%;
+    }
+
+    .stand-out .text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: center;
+        text-align: left;
+        padding: 0
+    }
+
+    .stand-out .text>* {
+        max-width: 65%;
+    }
+
+    /* Graphic Design Content */
+    .graphic-design {
+        background: url(./images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-size: cover;
+        width: calc(50% - 60px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .graphic-design h3 {
+        width: 100%;
+    }
+
+    .graphic-design p {
+        width: 45%;
+        justify-content: center;
+    }
+
+    /* Photography Content */
+    .photography {
+        background: url(./images/desktop/image-photography.jpg);
+        background-position: center;
+        background-size: cover;
+        width: calc(50% - 60px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .photography h3 {
+        width: 100%;
+    }
+
+    .photography p {
+        width: 45%;
+        justify-content: center;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 70px;
+    }
+
+    .testimonials h4 {
+        width: 100%;
+    }
+
+    .testimonial {
+        width: 30%;
+    }
+
+    /* Gallery */
+    .gallery {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #image1 {
+        content: url(./images/desktop/image-gallery-milkbottles.jpg);
+    }
+
+    #image2 {
+        content: url(./images/desktop/image-gallery-orange.jpg);
+    }
+
+    #image3 {
+        content: url(./images/desktop/image-gallery-cone.jpg);
+    }
+
+    #image4 {
+        content: url(./images/desktop/image-gallery-sugarcubes.jpg);
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .logo {
+        width: 15%;
+    }
+
+    footer ul {
+        width: 40%;
+    }
+
 }
