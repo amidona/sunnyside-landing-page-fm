@@ -10,14 +10,21 @@ const pinterestIcon = document.querySelector("#pinterest-icon");
 
 
 // Handle Menu 
-menuIcon.addEventListener("click", function () {
+function handleMenu (e) {
     const menuModal = document.querySelector(".menu");
-    if (!menuModal.classList.contains("open")) {
-        menuModal.classList.add("open");
-    } else {
-        menuModal.classList.remove("open")
+    if (e.type === "click" || e.key === "Enter") {
+        if (!menuModal.classList.contains("open")) {
+            menuModal.classList.add("open");
+        } else {
+            menuModal.classList.remove("open");
+        }
+    } else if (e.key === "Escape") {
+        menuModal.classList.remove("open");
     }
-});
+}
+
+menuIcon.addEventListener("click", handleMenu);
+menuIcon.addEventListener("keyup", handleMenu);
 
 // Handle Contact Button
 contactButton.addEventListener("mouseover", function () {
@@ -34,11 +41,17 @@ transformMore.onmouseover = () => transformMore.classList.add("hover");
 transformMore.onmouseout = () => transformMore.classList.remove("hover");
 standOutMore.onmouseover = () => standOutMore.classList.add("hover");
 standOutMore.onmouseout = () => standOutMore.classList.remove("hover");
+transformMore.onfocus = () => transformMore.classList.add("hover");
+transformMore.onblur = () => transformMore.classList.remove("hover");
+standOutMore.onfocus = () => standOutMore.classList.add("hover");
+standOutMore.onblur = () => standOutMore.classList.remove("hover");
 
 // Handle Footer
 footerLinks.forEach(item => {
     item.onmouseover = () => item.style.color = "white";
     item.onmouseout = () => item.style.color = "hsl(168, 34%, 41%)";
+    item.onfocus = () => item.style.color = "white";
+    item.onblur = () => item.style.color = "hsl(168, 34%, 41%)";
 });
 
 fbIcon.onmouseover = () => fbIcon.src = "./images/icon-facebook-white.svg";
@@ -49,3 +62,11 @@ twitterIcon.onmouseover = () => twitterIcon.src = "./images/icon-twitter-white.s
 twitterIcon.onmouseout = () => twitterIcon.src = "./images/icon-twitter.svg";
 pinterestIcon.onmouseover = () => pinterestIcon.src = "./images/icon-pinterest-white.svg";
 pinterestIcon.onmouseout = () => pinterestIcon.src = "./images/icon-pinterest.svg";
+fbIcon.parentElement.onfocus = () => fbIcon.src = "./images/icon-facebook-white.svg";
+fbIcon.parentElement.onblur = () => fbIcon.src = "./images/icon-facebook.svg";
+igIcon.parentElement.onfocus = () => igIcon.src = "./images/icon-instagram-white.svg";
+igIcon.parentElement.onblur = () => igIcon.src = "./images/icon-instagram.svg";
+twitterIcon.parentElement.onfocus = () => twitterIcon.src = "./images/icon-twitter-white.svg";
+twitterIcon.parentElement.onblur = () => twitterIcon.src = "./images/icon-twitter.svg";
+pinterestIcon.parentElement.onfocus = () => pinterestIcon.src = "./images/icon-pinterest-white.svg";
+pinterestIcon.parentElement.onblur = () => pinterestIcon.src = "./images/icon-pinterest.svg";
